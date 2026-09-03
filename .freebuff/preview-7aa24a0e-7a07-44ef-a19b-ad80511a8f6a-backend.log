@@ -1,0 +1,5 @@
+============================================================
+iQOO Adaptive Performance Intelligence — Backend
+============================================================
+[OK] Loaded 4 ML models
+INFO:     127.0.0.1:57426 - "GET /api/health HTTP/1.1" 200 OK

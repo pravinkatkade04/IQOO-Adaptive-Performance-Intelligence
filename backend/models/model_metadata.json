@@ -1,0 +1,74 @@
+{
+  "feature_columns": [
+    "cpu_usage",
+    "gpu_usage",
+    "ram_usage",
+    "temperature",
+    "battery_level",
+    "fps",
+    "network_usage",
+    "background_processes",
+    "app_usage",
+    "performance_mode",
+    "cpu_gpu_ratio",
+    "thermal_stress",
+    "power_draw",
+    "load_imbalance"
+  ],
+  "target_columns": [
+    "overheating_risk",
+    "fps_drop_risk",
+    "battery_drain_risk",
+    "performance_degradation"
+  ],
+  "training_results": {
+    "overheating_risk": {
+      "accuracy": 0.9486,
+      "cv_mean": 0.9512499755646733,
+      "cv_std": 0.0012752109922360474,
+      "top_features": {
+        "temperature": 0.9815609347198587,
+        "cpu_usage": 0.0028928281222569932,
+        "network_usage": 0.002352419846209578,
+        "ram_usage": 0.0019786402072863698,
+        "load_imbalance": 0.001604503189789945
+      }
+    },
+    "fps_drop_risk": {
+      "accuracy": 0.9486,
+      "cv_mean": 0.951599995564611,
+      "cv_std": 0.00015548653708040067,
+      "top_features": {
+        "gpu_usage": 0.1497595970111359,
+        "fps": 0.14482147815614033,
+        "temperature": 0.1038951369564608,
+        "cpu_gpu_ratio": 0.09504316261809281,
+        "network_usage": 0.08075787027384124
+      }
+    },
+    "battery_drain_risk": {
+      "accuracy": 1.0,
+      "cv_mean": 0.9997999987497813,
+      "cv_std": 0.0001870885488044233,
+      "top_features": {
+        "battery_level": 0.9969853785506896,
+        "background_processes": 0.002675861598682707,
+        "cpu_usage": 0.0002952054283299151,
+        "ram_usage": 1.7989007764229506e-05,
+        "power_draw": 7.985233607515651e-06
+      }
+    },
+    "performance_degradation": {
+      "accuracy": 0.9984,
+      "cv_mean": 0.9991749999989689,
+      "cv_std": 2.916742557891611e-08,
+      "top_features": {
+        "temperature": 0.9876624136519206,
+        "cpu_usage": 0.010179269167154642,
+        "gpu_usage": 0.0006597111853372094,
+        "network_usage": 0.00038943153529629886,
+        "ram_usage": 0.00026531867487948564
+      }
+    }
+  }
+}
